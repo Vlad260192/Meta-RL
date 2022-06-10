@@ -457,6 +457,7 @@ body{
 .tabs-container .content .list {
     display: flex;
     flex-direction: column;
+    position: relative;
 } 
 
 .content .list label {
@@ -472,6 +473,14 @@ body{
     color: #333;
 }
 
+.content .indicator {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #6d50e2;
+}
 .list {
 
 }
