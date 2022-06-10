@@ -440,13 +440,12 @@ body{
     width: 100%;
     border-radius: 12px;
     margin: 0px 20px;
-    background-color: var(--purple);
+    background-color: var(--white);
     padding: 40px 50px 40px 50px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-title {
-    color: var(--white);
 }
 
 .tabs-container .main-title {
@@ -458,6 +457,7 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 20%;
 } 
 
 .content .list label {
@@ -467,10 +467,23 @@ body{
     font-weight: 500;
     cursor: pointer;
     /* background-color: red; */
-    width: 20%;
     border-radius: 12px;
     padding: 0px 0px 0px 25px;
     color: #333;
+    z-index: 12;
+    transition: all 0.4s ease 0s;
+}
+
+.content .list label:hover {
+    color: #6d50e2;
+}
+
+#home:checked ~ .list .home,
+#blog:checked ~ .list .home,
+#help:checked ~ .list .home,
+#code:checked ~ .list .home,
+#about:checked ~ .list .home {
+    color: #fff;    
 }
 
 .content .indicator {
@@ -480,7 +493,30 @@ body{
     left: 0px;
     top: 0px;
     background-color: #6d50e2;
+    border-radius: 12px;
+    transition: all 0.4s ease 0s;
 }
+
+#home:checked ~ .list .indicator {
+    top: 0px;    
+}
+
+#blog:checked ~ .list .indicator {
+    top: 60px;    
+}
+
+#help:checked ~ .list .indicator {
+    top: 120px;    
+}
+
+#code:checked ~ .list .indicator {
+    top: 180px;    
+}
+
+#about:checked ~ .list .indicator {
+    top: 240px;    
+}
+
 .list {
 
 }
@@ -495,9 +531,9 @@ body{
 
 }
 
-.topic {
+/* .topic {
     color: var(--white);
-} 
+}  */
 
 .blog {
 
