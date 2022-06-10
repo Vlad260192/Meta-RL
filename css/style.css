@@ -435,6 +435,92 @@ body{
     text-transform: uppercase;
 }
 
+.tabs-container {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 0px 20px;
+    background-color: var(--purple);
+    padding: 40px 50px 40px 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-title {
+    color: var(--white);
+}
+
+.tabs-container .main-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0px 0px 20px 0px;
+}
+.tabs-container .content .list {
+    display: flex;
+    flex-direction: column;
+} 
+
+.content .list label {
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    /* background-color: red; */
+    width: 20%;
+    border-radius: 12px;
+    padding: 0px 0px 0px 25px;
+    color: #333;
+}
+
+.list {
+
+}
+
+.home {
+
+}
+.fas {
+
+}
+.fa-home {
+
+}
+
+.topic {
+    color: var(--white);
+} 
+
+.blog {
+
+}
+.fa-blog {
+
+}
+
+.help {
+
+}
+
+.fa-envelope {
+
+}
+
+.code {
+
+}
+
+.fa-code {
+
+}
+
+.about {
+
+}
+
+.fa-user {
+
+}
+
 @media (max-width: 767px) {
     body.lock{
         overflow: hidden;
