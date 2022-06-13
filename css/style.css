@@ -911,6 +911,172 @@ body{
 
 }
 
+.discord {
+    margin-top: 240px;
+
+}
+
+.discord__block {
+
+}
+
+.discord__row {
+    display: flex;
+    flex-direction: row;
+    margin: 0px -50px;
+
+}
+
+.discord__content {
+    flex: 0 1 50%;
+    padding: 0px 50px;
+    text-align: left;
+    align-self: center;
+}
+ 
+.discord__title {
+    font-size: 51px;
+    line-height: 61px;
+    text-transform: uppercase;
+    max-width: 345px;
+    margin: 0px 0px 34px 0px;
+}
+
+.discord__title span {
+    color: var(--green);
+}
+
+
+.discord__text {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 345px;
+    margin: 0px 0px 34px 0px;
+}
+
+.discord__btn {
+    display: inline-block;
+    padding: 13px 30px 14px 60px;
+    background-color: var(--green);
+    background-image:url(../image/socials02.png);
+    background-repeat: no-repeat;
+    background-position: 13% 50%;
+    background-size: 20px;
+
+}
+
+.discord__btn span {
+    color: var(--black-regular);
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.discord__image {
+    flex: 0 1 50%;
+    padding: 0px 50px;
+}
+
+.footer {
+    background-color: var(--purple);
+    padding: 101px 0px 120px;
+}
+ 
+.footer__block {
+
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -40px;
+}
+
+.footer__content {
+    flex: 0 1 70%;
+    padding: 0 40px;
+}
+
+.footer__content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer__content-col {
+    flex: 0 1 33.333%;
+}
+
+.footer__content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer__content-logo img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.copyring-text {
+    color: var(--white);
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0px 0px 29px 0px;
+}
+
+.footer__content-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__content-list li {
+    margin: 0px 0px 29px 0px;
+}
+
+.footer__content-link {
+    display: block;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.footer__socials {
+    flex: 0 1 30%;
+    padding: 0 40px;
+}
+
+.footer__socials-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.footer__socials-list li {
+    margin: 0px 10px 0px 10px;
+}
+
+.footer__socials-list li:last-child {
+    margin-right: 0px;
+}
+
+.footer__socials-link {
+    display: flex;
+    padding: 7px;
+    background-color: var(--white);
+    color: var(--white);
+}
+
+.footer__socials-link img{
+    flex: 0 0 20px;
+    height: 20px;
+}
+
 @media (max-width: 767px) {
     body.lock{
         overflow: hidden;
