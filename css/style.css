@@ -198,12 +198,13 @@ body{
 }
 
 .main {
+    overflow: hidden;
     padding: 110px 0px 0px 0px;
 }
 
 .record {
     overflow: hidden;
-
+    padding: 0px 0px 80px 0px;
 }
 .record__content {
     flex: 0 0 100%;
@@ -238,7 +239,6 @@ body{
 }
 
 .record__text {
-    max-width: 340px;
     width: 100%;
     font-size: 16px;
     line-height: 26px;
@@ -385,17 +385,17 @@ body{
   }  
 
   .artists {
-      margin-bottom: 178px;
+      margin-bottom: 90px;
 
   } 
   .artists__block {
 
   }
   .artists__row {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     margin: 0px -30px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px -30px; 
   }
   .artists__col {
     flex: 1;
@@ -475,7 +475,7 @@ body{
 
 .tab-content {
     background-color: var(--grey-darker);
-    padding: 60px 60px 40px 60px;
+    padding: 30px 20px 30px 20px;
 }
  
 .tab-option__row {
@@ -484,7 +484,7 @@ body{
 }
 
 .tab-option__image {
-    flex: 0 1 33.333%;
+    flex: 0 0 25%;
     padding: 0px 20px;
     display: flex;
     justify-content: center;
@@ -497,7 +497,7 @@ body{
 }
 
 .tab-option__content {
-    flex: 0 1 66.666%;
+    flex: 0 1 auto;
     padding: 0px 20px;
 } 
 
@@ -678,11 +678,11 @@ body{
     width: 100%;
     height: auto;
     border: none;
-    border-radius: 10px;
+    border-radius: 10%;
 }
 
 .roadmap__footer {
-    margin-top: 200px;
+    margin-top: 120px;
 
 }
 .roadmap__heading {
@@ -697,10 +697,11 @@ body{
     line-height: 12px;
     letter-spacing: 1px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .questions {
-    margin-top: 220px;
+    margin-top: 170px;
 }
 
 .questions__block {
@@ -710,12 +711,12 @@ body{
 .questions__row {
     display: flex;
     flex-direction: row;
-    margin: 0px -110px;
+    margin: 0px -20px;
 }
 
 .questions__content {
     flex: 0 1 50%;
-    padding: 0px 110px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -746,7 +747,7 @@ body{
 /* Spoiler */
 .questions__spoiler {
     flex: 0 1 50%;
-    padding: 0px 110px;
+    padding: 0px 20px;
 }
 
 .spoiler-wrapper {
@@ -834,6 +835,8 @@ body{
 .team__row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin: 0px -50px;
 }
 
@@ -907,11 +910,14 @@ body{
 }
 
 .team__text {
-
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
 }
 
 .discord {
-    margin-top: 240px;
+    margin: 120px 0px;
 
 }
 
@@ -922,6 +928,7 @@ body{
 .discord__row {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 0px -50px;
 
 }
@@ -978,7 +985,8 @@ body{
 
 .footer {
     background-color: var(--purple);
-    padding: 101px 0px 120px;
+    padding: 80px 0px 30px;
+    overflow: hidden;
 }
  
 .footer__block {
@@ -988,23 +996,29 @@ body{
 .footer__row {
     display: flex;
     flex-direction: row;
-    margin: 0 -40px;
+    margin: 0 -20px;
 }
 
 .footer__content {
-    flex: 0 1 70%;
-    padding: 0 40px;
+    flex: 0 1 80%;
+    padding: 0 20px;
 }
 
 .footer__content-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: stretch;
 
 }
 
 .footer__content-col {
-    flex: 0 1 33.333%;
+    flex: 0 1 auto;
+    margin: 0px 20px;
+}
+
+.footer__content-col:first-child {
+    flex: 0 1 33%;
 }
 
 .footer__content-inner {
@@ -1014,8 +1028,11 @@ body{
     height: 100%;
 }
 
+.footer__content-logo {
+    flex: 0 0 125px;
+}
+
 .footer__content-logo img{
-    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -1025,16 +1042,18 @@ body{
     font-size: 13px;
     line-height: 20px;
     text-align: left;
-    margin: 0px 0px 29px 0px;
+    /* margin: 0px 0px 29px 0px; */
 }
 
 .footer__content-list {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .footer__content-list li {
-    margin: 0px 0px 29px 0px;
+    /* margin: 29px 0px 0px 0px; */
 }
 
 .footer__content-link {
@@ -1046,8 +1065,8 @@ body{
 }
 
 .footer__socials {
-    flex: 0 1 30%;
-    padding: 0 40px;
+    flex: 0 1 auto;
+    padding: 0 20px;
 }
 
 .footer__socials-list {
@@ -1138,7 +1157,7 @@ body{
         width: 100%;
         height: 100%;
         background-color: var(--black-regular);
-        padding: 70px 10px 20px 10px;
+        padding: 60% 10px 20px 10px;
         transition: all 0.3s ease 0s;
         overflow: auto;
     }
@@ -1168,12 +1187,29 @@ body{
         padding: 70px 0px 0px 0px;
     }
 
+    .record {
+        text-align: center;
+    }
+
+    .wave {
+        margin-bottom: 70px;
+    }
+
+    .wave__block {
+        margin-bottom: 30px;
+    }
+
     .wave__row {
         flex-direction: column;
     }
 
     .wave__image {
         margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .wave__content {
+        text-align: justify;
     }
 
     .wave__content-footer {
@@ -1181,22 +1217,89 @@ body{
         justify-content: center;
     }
 
+    .scroll__text {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .artists {
+        margin-bottom: 70px;
+    }
+    
+    .artists__col {
+        margin-bottom: 30px;
+    }
+
+    .story {
+        margin: 0px 0px 70px;
+    }
+
     .tab-content {
         padding: 20px 10px 20px 10px;
     }
 
-
     .tab-option__row {
         flex-direction: column;
+        margin: 0px;
     }
 
+    .tab-option__content {
+        padding: 10px 20px;
+    }
+
+    .tab-content {
+        padding: 0px;
+        max-height: 450px;
+        overflow: auto;
+    }
+ 
     .tab-option__image {
         display: none;
+    }
+
+    .tabs-wrapper {
+        margin-bottom: 70px;
+    }
+
+    .story__title {
+        text-align: center;
+    }
+
+    .roadmap {
+        background-image: none;
+    }
+
+    .roadmap__col {
+        margin: 30px 0px;
+    }
+
+    .roadmap__col:not(:last-child):before {
+        bottom: -30px;
+    }
+
+    .roadmap__col-body {
+        padding: 10px 13px 20px;
+    }
+
+    .roadmap__col-content {
+        margin: 0px 10px 20px 0px;
+    }
+
+    .questions {
+        margin-top: 70px;
+    }
+
+    .questions__block {
+        margin: 0px 0px 70px;
     }
 
     .questions__row {
         align-items: center;
         flex-direction: column;
+    }
+
+    .roadmap__footer {
+        margin-top: 50px;
     }
 
     .questions__content {
@@ -1208,14 +1311,22 @@ body{
         width: 100%;
     }
 
+    .spoiler-block__text {
+        text-align: justify;
+    }
+
     .team__row {
         flex-direction: column;
         align-items: center;
     }
 
     .team__col {
-        max-width: 360px;
-        margin: 0px 0px 30px 0px;
+        min-width: 320px;
+        margin: 0px 0px 50px 0px;
+    }
+
+    .discord {
+        margin-top: 70px;
     }
 
     .discord__row {
@@ -1232,6 +1343,45 @@ body{
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+
+    .footer {
+        padding: 60px 0px 70px;
+    }
+
+    .footer__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__content-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__content-col {
+        margin-bottom: 20px;
+    }
+
+    .footer__content-list li {
+        margin-bottom: 20px;
+    }
+
+    .footer__content-col li:last-child {
+        margin-bottom: 0px;
+    }
+
+    .footer__content-logo {
+        flex: 0 0 55px;
+    }
+
+    .footer__socials-list li:last-child {
+        margin-right: 10px;
+    }
+
+    .roadmap__col-body {
+        flex-direction: column;
     }
 }
 
