@@ -397,56 +397,49 @@ body{
     border: none;
 }
 
-.scroll__container {
-    border: none;
-    overflow: hidden;
-  }
+  /* Scroll text  */
 
-  .scroll__row  {
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .scroll__text {
-      padding: 0px 20px;
-    /* animation properties */
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    color: var(--white);
-    font-family: 'Audiowide';
+.scroll__container{
+    background-color: teal;
+    color: white;
+    font-family: helvetica;
     text-transform: uppercase;
-    font-size: 79px;
-    line-height: 88px;
-    -moz-animation: scroll-animation 10s linear infinite;
-    -webkit-animation: scroll-animation 10s linear infinite;
-    animation: scroll-animation 10s linear infinite;
+    overflow-x: hidden;
+}    
+    
+.scroll__wrapper{
+    display:flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    min-width: 100%;
+}
+
+.news-message{
+    display : flex;
+    flex-shrink: 0;
+    height: 50px;
+    align-items: center;
+    animation: slide-left 20s linear infinite;
+}
+
+p{
+    font-size: 2.5em;
+    font-weight: 100;
+    padding-left: 0.5em;
   }
-  
-  /* for Firefox */
-  @-moz-keyframes scroll-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes scroll-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes scroll-animation {
+
+    @keyframes slide-left {
     from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
     }
     to {
-      -moz-transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+              transform: translateX(-100%);
     }
-  }  
+  }
+
+  /* ____________ */
 
   .artists {
       margin-bottom: 90px;
@@ -534,7 +527,10 @@ body{
     place-items: center;
     cursor: pointer;
     color: var(--white);
-    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px 10px;
 }
 
 .tab-content {
@@ -1103,6 +1099,7 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
+    margin: 0px -20px;
 }
 
 .footer__content-col {
