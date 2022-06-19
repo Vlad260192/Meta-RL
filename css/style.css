@@ -204,12 +204,12 @@ body{
     padding: 7px;
     background-color: var(--white);
     color: var(--white);
+    transition: all 0.3s ease 0s;
 }
 
 .header__socials-link:hover {
     background-color: var(--light-grey);
     transform: scale(1.1);
-    transition: all 0.3s ease 0s;
 }
 
 .header__socials-link:active {
@@ -280,12 +280,12 @@ body{
     font-size: 16px;
     line-height: 16px;
     padding: 17px 40px 18px;
+    transition: all 0.3s ease 0s;
 }
 
 .record__btn:hover {
     background-color: var(--white);
     transform: scale(1.1);
-    transition: all 0.3s ease 0s;
 }
 
 .record__btn:active {
@@ -377,13 +377,13 @@ body{
     font-size: 16px;
     line-height: 16px;
     border: 1px solid var(--green);
+    transition: all 0.3s ease 0s;
 }
 
 .wave__btn:hover {
     background-color: var(--white);
     color: var(--black-regular);
     transform: scale(1.1);
-    transition: all 0.3s ease 0s;
 }
 
 .wave__btn:active {
@@ -400,8 +400,8 @@ body{
   /* Scroll text  */
 
 .scroll__container{
-    background-color: teal;
-    color: white;
+    background-color: transparent;
+    color:var(--white);
     font-family: helvetica;
     text-transform: uppercase;
     overflow-x: hidden;
@@ -417,27 +417,36 @@ body{
 .news-message{
     display : flex;
     flex-shrink: 0;
-    height: 50px;
+    min-height: 50px;
     align-items: center;
-    animation: slide-left 20s linear infinite;
+    overflow: hidden;
+    -moz-animation: slide-left 30s linear infinite;
+    -webkit-animation: slide-left 30s linear infinite;
+    animation: slide-left 30s linear infinite;
+    
 }
 
-p{
-    font-size: 2.5em;
-    font-weight: 100;
+.scroll__text{
+    color: var(--white);
+    font-family: 'Audiowide';
+    text-transform: uppercase;
+    font-size: 79px;
+    line-height: 88px;
     padding-left: 0.5em;
-  }
+}
 
-    @keyframes slide-left {
+@keyframes slide-left {
     from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
     to {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
     }
-  }
+}
 
   /* ____________ */
 
@@ -874,7 +883,7 @@ p{
 
 .spoiler-block__text {
     display: none;
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     margin: 0px 0px 24px 0px;
     color: var(--light-grey);
     font-family: 'Inter', sans-serif;
@@ -962,12 +971,12 @@ p{
     padding: 7px;
     background-color: var(--white);
     color: var(--white);
+    transition: all 0.3s ease 0s;
 }
 
 .team__socials-link:hover {
     background-color: var(--light-grey);
     transform: scale(1.1);
-    transition: all 0.3s ease 0s;
 }
 
 .team__socials-link:active {
@@ -1044,12 +1053,12 @@ p{
     background-repeat: no-repeat;
     background-position: 13% 50%;
     background-size: 20px;
+    transition: all 0.3s ease 0s;
 }
 
 .discord__btn:hover {
     background-color: var(--white);
     transform: scale(1.1);
-    transition: all 0.3s ease 0s;
 }
 
 .discord__btn:active {
@@ -1192,12 +1201,12 @@ p{
     padding: 7px;
     background-color: var(--white);
     color: var(--white);
+    transition: all 0.3s ease 0s;
 }
 
 .footer__socials-link:hover {
     background-color: var(--light-grey);
     transform: scale(1.1);
-    transition: all 0.3s ease 0s;
 }
 
 .footer__socials-link:active {
